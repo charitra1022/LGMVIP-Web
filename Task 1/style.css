@@ -3,9 +3,9 @@ html{
 }
 
 body{
-    background-image: -moz-linear-gradient(rgb(44, 0, 102), rgb(69, 0, 126));
-    background-image: -o-linear-gradient(rgb(44, 0, 102), rgb(69, 0, 126));
-    background-image: -webkit-linear-gradient(rgb(44, 0, 102), rgb(84, 1, 151));
+    background-image: -moz-linear-gradient(rgb(44, 0, 102), rgb(141, 0, 255));
+    background-image: -o-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255));
+    background-image: -webkit-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255));
     background-repeat: no-repeat;
     background-size: cover;
 
