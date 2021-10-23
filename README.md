@@ -1,3 +1,3 @@
 # LetsGrowMore
-## Virtual Intership Program
+## Virtual Intership Program - November Batch
 ### Web Developer Internship
