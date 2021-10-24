@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +19,6 @@
     <!-- Fontawesome 4.7 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Everything Computerized</title>
 </head>
@@ -40,13 +41,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="." class="nav-link">Home</a>
                 </li>
                 
                 <li class="nav-item">
                     <a href="#about-section" class="nav-link">About</a>
                 </li>
                 
+                <li class="nav-item">
+                    <a href="#projects-section" class="nav-link">Projects</a>
+                </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">Pricing</a>
                 </li>
@@ -71,30 +76,30 @@
             <!-- Slide 1 contents -->
             <div class="carousel-item active" data-interval="4000">
                 <img src="images/carousel/img1.jpg" class="d-block w-100" alt="First Slide">
-                <div class="carousel-caption">
-                    <h5><strong>Easy Learning</strong></h5>
+                <div class="carousel-caption text-left">
+                    <h3><strong>Easy Learning</strong></h3>
                     <p class="d-none d-md-block">Learn to code in the best and efficient way you've ever heard of!</p>
-                    <button type="button" class="btn btn-outline-primary">More ></button>
+                    <a role="button" class="btn btn-primary" href="#">More ></a>
                 </div>
             </div> <!-- Slide 1 contents -->
 
             <!-- Slide 2 contents -->
             <div class="carousel-item" data-interval="10000">
                 <img src="images/carousel/img2.jpg" class="d-block w-100" alt="First Slide">
-                <div class="carousel-caption">
-                    <h5><strong>Best E-Books</strong></h5>
+                <div class="carousel-caption text-left">
+                    <h3><strong>Best E-Books</strong></h3>
                     <p class="d-none d-md-block">We've got some of the best ebooks that can facilitate your learning journey without having you to worry about the need to carry them everywhere!</p>
-                    <button type="button" class="btn btn-outline-primary">More ></button>
+                    <a role="button" class="btn btn-primary" href="#">More ></a>
                 </div>
             </div> <!-- Slide 2 contents -->
 
             <!-- Slide 3 contents -->
             <div class="carousel-item" data-interval="8000">
                 <img src="images/carousel/img3.jpg" class="d-block w-100" alt="First Slide">
-                <div class="carousel-caption">
-                    <h5><strong>Well designed Syllabus</strong></h5>
+                <div class="carousel-caption text-left">
+                    <h3><strong>Well designed Syllabus</strong></h3>
                     <p class="d-none d-md-block">We've made the learning process easier for you by designing a flexible Syllabus which you can control yourself.</p>
-                    <button type="button" class="btn btn-outline-primary">More ></button>
+                    <a role="button" class="btn btn-primary" href="#">More ></a>
                 </div>
             </div> <!-- Slide 3 contents -->
         </div> <!-- Carousel Contents (with captions) -->
@@ -134,6 +139,52 @@
                 <p>We also have a community where you can share your thoughts or post your doubts. There are thousands of community members who are ready to help each other!</p>
             </div>
         </div>
-    </div>
+    </div> <!-- About Section -->
+
+    <!-- Projects Section -->
+    <div id="projects-section" class="container">
+        <h1><center><strong>Projects</strong></center></h1>
+        <p>Here are some projects that our students have made across the years.</p>
+        
+        <div class="row">
+            <div class="col-sm-4 sub-section">
+                <div class="card">
+                    <img src="images/cards/img1.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">some text</p>
+                        <a href="#" class="btn btn-primary">See</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 sub-section">
+                <div class="card">
+                    <img src="images/cards/img1.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">some text</p>
+                        <a href="#" class="btn btn-primary">See</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 sub-section">
+                <div class="card">
+                    <img src="images/cards/img1.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">some text</p>
+                        <a href="#" class="btn btn-primary">See</a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div> <!-- About Section -->
+
+    <a id='scrolltotop' href='#'><i class="fa fa-chevron-circle-up"></i></a>
+    <script src="script.js"></script>
 </body>
 </html>
