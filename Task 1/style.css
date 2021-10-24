@@ -1,11 +1,26 @@
 body{
-    background-image: -moz-linear-gradient(rgb(44, 0, 102), rgb(141, 0, 255));
+    /* background-image: -moz-linear-gradient(rgb(44, 0, 102), rgb(141, 0, 255));
     background-image: -o-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255));
-    background-image: -webkit-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255));
+    background-image: -webkit-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255)); */
     background-repeat: no-repeat;
     background-size: cover;
 
-    font-family: 'Sora', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container{
+    padding-top: 4em;
+}
+.container h1{
+    padding-bottom: 1em;
+}
+.container .sub-section{
+    padding: 2em;
+    text-align: center;
+}
+.container .sub-section .fa{
+    font-size: 4em;
+    margin: 0.2em;
 }
 
 .navbar-brand{
