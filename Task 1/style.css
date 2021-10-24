@@ -4,18 +4,56 @@ body{
     background-image: -webkit-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255));
     background-repeat: no-repeat;
     background-size: cover;
+
+    font-family: 'Sora', sans-serif;
 }
 
 .navbar-brand{
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
     letter-spacing: 0.05em;
+    margin-left: 1%;
 }
 
+.navbar-space{
+    width: 40%;
+}
+
+.nav-item{
+    margin-right: 2em;
+}
 
 .carousel-button{
     visibility: hidden;
 }
+
+.carousel-item img{
+    filter: brightness(30%);
+}
+
+.carousel-caption{
+    /* font-size: 70%; */
+    /* background-color: red; */
+    left: 15%;
+    top: 30%;
+    text-align: left;
+    /* margin-left: 2em; */
+}
+.carousel-caption button{
+    color: white;
+}
+
+.carousel-indicators{
+    left: 60%;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
+
 
 
 

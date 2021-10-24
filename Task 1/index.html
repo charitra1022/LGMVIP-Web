@@ -12,7 +12,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Sora:wght@200&display=swap" rel="stylesheet">
 
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -20,8 +20,10 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-        <a class="navbar-brand" href="#">Everything Computerized</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <a class="navbar-brand" href=".">Everything Computerized</a>
+
+        <span class="navbar-space d-none d-md-block"></span>
 
         <!-- Animated button code -->
         <button class="navbar-toggler x" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +31,8 @@
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
         </button>
+
+        
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -64,27 +68,30 @@
             <!-- Slide 1 contents -->
             <div class="carousel-item active" data-interval="4000">
                 <img src="images/carousel/img1.jpg" class="d-block w-100" alt="First Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 1</h5>
-                    <p>Some details here</p>
+                <div class="carousel-caption">
+                    <h5><strong>Easy Learning</strong></h5>
+                    <p class="d-none d-md-block">Learn to code in the best and efficient way you've ever heard of!</p>
+                    <button type="button" class="btn btn-outline-primary">More ></button>
                 </div>
             </div> <!-- Slide 1 contents -->
 
             <!-- Slide 2 contents -->
-            <div class="carousel-item" data-interval="4000">
+            <div class="carousel-item" data-interval="10000">
                 <img src="images/carousel/img2.jpg" class="d-block w-100" alt="First Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 1</h5>
-                    <p>Some details here</p>
+                <div class="carousel-caption">
+                    <h5><strong>Best E-Books</strong></h5>
+                    <p class="d-none d-md-block">We've got some of the best ebooks that can facilitate your learning journey without having you to worry about the need to carry them everywhere!</p>
+                    <button type="button" class="btn btn-outline-primary">More ></button>
                 </div>
             </div> <!-- Slide 2 contents -->
 
             <!-- Slide 3 contents -->
-            <div class="carousel-item" data-interval="4000">
+            <div class="carousel-item" data-interval="8000">
                 <img src="images/carousel/img3.jpg" class="d-block w-100" alt="First Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 1</h5>
-                    <p>Some details here</p>
+                <div class="carousel-caption">
+                    <h5><strong>Well designed Syllabus</strong></h5>
+                    <p class="d-none d-md-block">We've made the learning process easier for you by designing a flexible Syllabus which you can control yourself.</p>
+                    <button type="button" class="btn btn-outline-primary">More ></button>
                 </div>
             </div> <!-- Slide 3 contents -->
         </div> <!-- Carousel Contents (with captions) -->
