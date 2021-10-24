@@ -5,7 +5,46 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fira Sans', sans-serif;
+    overflow: scroll;
 }
+
+
+
+/* Hide scroll bar */
+body::-webkit-scrollbar{ display: none; } /* Chrome, Safari and Opera*/
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
+/* Navigation Bar element styles */
+.navbar{ opacity: 90%; }
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    letter-spacing: 0.05em;
+    margin-left: 1%;
+}
+.navbar-space{ width: 30%; } /* introduces a space after brand name in large screens */
+.nav-item{ margin-right: 2em; } /* Space after each nav link */
+
+
+
+/* Carousel Element Styles */
+.carousel-button{ visibility: hidden; } /* Hide carousel controls. Show only when hovered */
+.carousel-item img{ filter: brightness(30%); } /* Darken carousel images for better appearance */
+.carousel-caption button{ color: white; }
+.carousel-indicators{ left: 60%; } /* Shift carousel indeicators to right */
+.carousel-indicators li{
+    /* Dot carousel indicators */
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
 
 /* SCROLL TO TOP STYLES */
 #scrolltotop{
@@ -18,80 +57,54 @@ body{
     border-radius: 100%;
     text-decoration: none;
     color: cornflowerblue; 
-}  
+} 
+
+
 
 /* basic css properties for general elements */
 .container{
     padding-top: 4em;
     text-align: center;
 }
-.container h1{
-    padding-top: 1em;
-}
-.container .sub-section{
-    padding: 2em;
-}
+.container h1{ padding-top: 1em; }
+.container .sub-section{ padding: 2em; }
 .container .sub-section .fa{
     font-size: 4em;
     margin: 0.2em;
 }
 
+
+
+
 /* Projects Card styles */
-.sub-section .card{
-    border-radius: 10px;
+.sub-section .card{  border-radius: 10px; }
+.sub-section .card img{ border-radius: 10px 10px 0px 0px; }
+
+
+
+
+/* Videos Section styles */
+.video-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
 }
-.sub-section .card img{
-    border-radius: 10px 10px 0px 0px;
+.video-group > .row > .col-sm-4 {
+    display: inline-block;
+    float: none;
 }
-
-
-/* Navigation Bar element styles */
-.navbar{
-    opacity: 90%;
-}
-.navbar-brand{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 1000;
-    letter-spacing: 0.05em;
-    margin-left: 1%;
-}
-.navbar-space{ width: 40%; } /* introduces a space after brand name in large screens */
-
-.nav-item{ margin-right: 2em; } /* Space after each nav link */
-
-
-/* Carousel Element Styles */
-.carousel-button{ visibility: hidden; } /* Hide carousel controls. Show only when hovered */
-
-.carousel-item img{ filter: brightness(30%); } /* Darken carousel images for better appearance */
-
-.carousel-caption button{
-    color: white;
-}
-
-.carousel-indicators{ left: 60%; } /* Shift carousel indeicators to right */
-
-.carousel-indicators li{
-    /* Dot carousel indicators */
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+.video-group .row::-webkit-scrollbar{ display: none; } /* Chrome, Safari and Opera*/
+.video-group .row{
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 
 
 
-
-
- /* Start of Animated toggler button styles */
- .navbar-toggler.x {
-    border: none; 
-}
-
-.navbar-toggler.x:focus {
-    outline: none; 
-}
-
+ /* Animated toggler button styles */
+.navbar-toggler.x { border: none;  }
+.navbar-toggler.x:focus { outline: none; }
 .navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(1) {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -100,12 +113,10 @@ body{
     -ms-transform-origin: 10% 10%;
     transform-origin: 10% 10%; 
 }
-
 .navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(2) {
     opacity: 0;
     filter: alpha(opacity=0); 
 }
-
 .navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(3) {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -114,7 +125,6 @@ body{
     -ms-transform-origin: 10% 90%;
     transform-origin: 10% 90%;
 }
-
 .navbar-toggler.x .icon-bar {
     width: 22px;
     display: block;
@@ -123,25 +133,18 @@ body{
     -webkit-transition: all 0.2s;
     transition: all 0.2s; 
 }
-
-.navbar-toggler.x .icon-bar + .icon-bar {
-    margin-top: 4px; 
-}
-
+.navbar-toggler.x .icon-bar + .icon-bar { margin-top: 4px; }
 .navbar-toggler.x .icon-bar:nth-of-type(1) {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0); 
 }
-
 .navbar-toggler.x .icon-bar:nth-of-type(2) {
     opacity: 1;
     filter: alpha(opacity=100); 
 }
-
 .navbar-toggler.x .icon-bar:nth-of-type(3) {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0); 
 }
-/* End of Animated toggler button styles */
