@@ -4,47 +4,42 @@ body{
     background-image: -webkit-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255)); */
     background-repeat: no-repeat;
     background-size: cover;
-
     font-family: 'Fira Sans', sans-serif;
 }
 
+/* basic css properties for general elements */
 .container{
-    padding-top: 4em;
+    padding: 4em;
+    text-align: center;
 }
 .container h1{
-    padding-bottom: 1em;
+    padding: 1em;
 }
 .container .sub-section{
     padding: 2em;
-    text-align: center;
 }
 .container .sub-section .fa{
     font-size: 4em;
     margin: 0.2em;
 }
 
+
+/* Navigation Bar element styles */
 .navbar-brand{
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
     letter-spacing: 0.05em;
     margin-left: 1%;
 }
+.navbar-space{ width: 40%; } /* introduces a space after brand name in large screens */
 
-.navbar-space{
-    width: 40%;
-}
+.nav-item{ margin-right: 2em; } /* Space after each nav link */
 
-.nav-item{
-    margin-right: 2em;
-}
 
-.carousel-button{
-    visibility: hidden;
-}
+/* Carousel Element Styles */
+.carousel-button{ visibility: hidden; } /* Hide carousel controls. Show only when hovered */
 
-.carousel-item img{
-    filter: brightness(30%);
-}
+.carousel-item img{ filter: brightness(30%); } /* Darken carousel images for better appearance */
 
 .carousel-caption{
     /* font-size: 70%; */
@@ -58,10 +53,10 @@ body{
     color: white;
 }
 
-.carousel-indicators{
-    left: 60%;
-}
+.carousel-indicators{ left: 60%; } /* Shift carousel indeicators to right */
+
 .carousel-indicators li{
+    /* Dot carousel indicators */
     width: 10px;
     height: 10px;
     border-radius: 100%;
