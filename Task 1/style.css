@@ -7,13 +7,26 @@ body{
     font-family: 'Fira Sans', sans-serif;
 }
 
+/* SCROLL TO TOP STYLES */
+#scrolltotop{
+    font-size: 2em;
+    padding: 0em;
+    margin-right: 0.3em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    text-decoration: none;
+    color: cornflowerblue; 
+}  
+
 /* basic css properties for general elements */
 .container{
-    padding: 4em;
+    padding-top: 4em;
     text-align: center;
 }
 .container h1{
-    padding: 1em;
+    padding-top: 1em;
 }
 .container .sub-section{
     padding: 2em;
@@ -23,8 +36,19 @@ body{
     margin: 0.2em;
 }
 
+/* Projects Card styles */
+.sub-section .card{
+    border-radius: 10px;
+}
+.sub-section .card img{
+    border-radius: 10px 10px 0px 0px;
+}
+
 
 /* Navigation Bar element styles */
+.navbar{
+    opacity: 90%;
+}
 .navbar-brand{
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
@@ -41,14 +65,6 @@ body{
 
 .carousel-item img{ filter: brightness(30%); } /* Darken carousel images for better appearance */
 
-.carousel-caption{
-    /* font-size: 70%; */
-    /* background-color: red; */
-    left: 15%;
-    top: 30%;
-    text-align: left;
-    /* margin-left: 2em; */
-}
 .carousel-caption button{
     color: white;
 }
