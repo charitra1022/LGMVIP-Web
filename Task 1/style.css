@@ -116,6 +116,19 @@ body{
 
 
 
+/* Form section styles */
+.form-group{ text-align: left; }
+.map-iframe{
+    height: 100%;
+    width: 100%;
+}
+input[role="button"]{
+    background-color: #007bff;
+    color: white;
+}
+
+
+
 /* Footer Styles */
 footer{
     background-color: rgb(233, 233, 233);
