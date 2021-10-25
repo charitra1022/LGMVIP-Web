@@ -1,3 +1,5 @@
+html{ scroll-behavior: smooth; }
+
 body{
     /* background-image: -moz-linear-gradient(rgb(44, 0, 102), rgb(141, 0, 255));
     background-image: -o-linear-gradient(rgb(44, 0, 102), rgb(140, 0, 255));
@@ -11,7 +13,7 @@ body{
 
 
 /* Hide scroll bar */
-body::-webkit-scrollbar{ display: none; } /* Chrome, Safari and Opera*/
+body::-webkit-scrollbar{ display: none; } /* Chrome, Safari and Opera */
 body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -32,6 +34,7 @@ body{
 
 
 
+
 /* Carousel Element Styles */
 .carousel-button{ visibility: hidden; } /* Hide carousel controls. Show only when hovered */
 .carousel-item img{ filter: brightness(30%); } /* Darken carousel images for better appearance */
@@ -42,6 +45,11 @@ body{
     width: 10px;
     height: 10px;
     border-radius: 100%;
+}
+.card{ transition: 0.3s transform ease, 0.3s box-shadow ease; }
+.card:hover{
+    transform: scale(1.05);
+    box-shadow:  0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 
@@ -56,7 +64,7 @@ body{
     bottom: 0;
     border-radius: 100%;
     text-decoration: none;
-    color: cornflowerblue; 
+    color: #007bff; 
 } 
 
 
@@ -74,12 +82,9 @@ body{
 }
 
 
-
-
 /* Projects Card styles */
 .sub-section .card{  border-radius: 10px; }
 .sub-section .card img{ border-radius: 10px 10px 0px 0px; }
-
 
 
 
@@ -92,13 +97,46 @@ body{
     display: inline-block;
     float: none;
 }
-.video-group .row::-webkit-scrollbar{ display: none; } /* Chrome, Safari and Opera*/
-.video-group .row{
-    overflow: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+/* Custom scroll bar */
+.video-group .row{ scrollbar-color: #007bff #F5F5F5; }
+.video-group .row::-webkit-scrollbar {
+    height: 8px;
+    background-color: #F5F5F5;
 }
+.video-group .row::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 10px; 
+}
+.video-group .row::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #007bff;
+}
+.video-group .row::-webkit-scrollbar-thumb:hover { background: #007bff; }
 
+
+
+
+/* Navigation Bar Link underline animation */
+#navbarNav .nav-item .nav-link {
+    position: relative;
+  }
+#navbarNav .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #007bff; /*Color of the underline bar. BE FREE TO MANIPULATE!!*/
+    transition: 0.4s; /*Animation delay of the underline. BE FREE TO MANIPULATE!!*/
+}
+@media (min-width: 992px) {
+    #navbarNav .nav-item .nav-link:hover:after {
+        width: 100%;
+    }
+}
+#navbarNav .nav-item .active:after {
+    width: 100%;
+}
 
 
 
