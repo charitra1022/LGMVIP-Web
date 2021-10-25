@@ -71,7 +71,8 @@ body{
 
 /* basic css properties for general elements */
 .container{
-    padding-top: 4em;
+    margin-top: 2em;
+    padding-top: 2em;
     text-align: center;
 }
 .container h1{ padding-top: 1em; }
@@ -112,6 +113,13 @@ body{
     background-color: #007bff;
 }
 .video-group .row::-webkit-scrollbar-thumb:hover { background: #007bff; }
+
+
+
+/* Footer Styles */
+footer{
+    background-color: rgb(233, 233, 233);
+}
 
 
 
