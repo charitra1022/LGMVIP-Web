@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Poppins:wght@100&family=Sora:wght@200&display=swap" rel="stylesheet">
 
-    <!-- Fontawesome 4.7 -->
+    <!-- Font Awesome 4.7 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="style.css">
@@ -59,6 +59,10 @@
 
                     <li class="nav-item">
                         <a href="#pricing-section" class="nav-link">Pricing</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link">Contact</a>
                     </li>
                     
                 </ul>
@@ -200,25 +204,25 @@
             <p>You can have a look at some of our top performing videos on YouTube.</p>
             
             <div class="row text-center flex-nowrap">
-                <div class="col-sm-4 sub-section">
+                <div class="col-sm-3 sub-section">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe src="https://www.youtube.com/embed/M3QNZgC8NXk?rel=0" title="YouTube video player" allowfullscreen class="embed-responsive-item"></iframe>
                     </div>
                 </div>
                 
-                <div class="col-sm-4 sub-section">
+                <div class="col-sm-3 sub-section">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe src="https://www.youtube.com/embed/OSfcmmoQWgU?rel=0" title="YouTube video player" allowfullscreen class="embed-responsive-item"></iframe>
                     </div>
                 </div>
                 
-                <div class="col-sm-4 sub-section">
+                <div class="col-sm-3 sub-section">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe src="https://www.youtube.com/embed/6CzfqZU2k0c?rel=0" title="YouTube video player" allowfullscreen class="embed-responsive-item"></iframe>
                     </div>
                 </div>
                 
-                <div class="col-sm-4 sub-section">
+                <div class="col-sm-3 sub-section">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe src="https://www.youtube.com/embed/t7c7JEcUbW0?rel=0" title="YouTube video player" allowfullscreen class="embed-responsive-item"></iframe>
                     </div>
@@ -291,6 +295,47 @@
                 
             </div>
         </div> <!-- Pricing Section -->
+
+        <!-- Contact Section -->
+        <div id="contact-section" class="container section">
+            <h1><center><strong>Contact</strong></center></h1>
+            <div class="row">
+                <div class="col-sm-7 sub-section">
+                    <iframe class="map-iframe" src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-sm-5 sub-section">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput">Name</label>
+                            <input type="text" class="form-control" id="nameInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailInput">Email Address</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email address with anyone else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjectInput">Subject</label>
+                            <input type="text" class="form-control" id="subjectInput">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageInput">Message</label>
+                            <textarea class="form-control" id="messageInput" rows="10"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input role="button" type="submit" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- Contact Section -->
+
+
     </main>
 
 
