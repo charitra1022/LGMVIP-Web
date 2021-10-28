@@ -12,7 +12,7 @@ body{
 
 
 
-/* Hide scroll bar */
+/* Hide scroll bar from body */
 body::-webkit-scrollbar{ display: none; } /* Chrome, Safari and Opera */
 body{
     -ms-overflow-style: none;  /* IE and Edge */
@@ -21,7 +21,7 @@ body{
 
 
 
-/* Navigation Bar element styles */
+/* Navigation Bar styles */
 .navbar{ opacity: 90%; }
 .navbar-brand{
     font-family: 'Poppins', sans-serif;
@@ -35,26 +35,42 @@ body{
 
 
 
-/* Carousel Element Styles */
+/* Carousel Styles */
 .carousel-button{ visibility: hidden; } /* Hide carousel controls. Show only when hovered */
 .carousel-item img{ filter: brightness(30%); } /* Darken carousel images for better appearance */
 .carousel-caption button{ color: white; }
-.carousel-indicators{ left: 60%; } /* Shift carousel indeicators to right */
+.carousel-indicators{ left: 60%; } /* Shift carousel indicators to right */
 .carousel-indicators li{
     /* Dot carousel indicators */
     width: 10px;
     height: 10px;
     border-radius: 100%;
 }
-.card{ transition: 0.3s transform ease, 0.3s box-shadow ease; }
-.card:hover{
-    transform: scale(1.05);
-    box-shadow:  0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+
+
+/* CSS properties for general elements - containers */
+.container{
+    margin-top: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+.section-title{ 
+    padding-top: 1em; 
+    text-align: center;
+
+}
+.container .sub-section{ padding: 2em; }
+.container .sub-section .fa{
+    font-size: 4em;
+    margin: 0.2em;
 }
 
 
 
-/* SCROLL TO TOP STYLES */
+
+
+/* Scroll to top button styles */
 #scrolltotop{
     font-size: 2em;
     padding: 0em;
@@ -69,23 +85,15 @@ body{
 
 
 
-/* basic css properties for general elements */
-.container{
-    margin-top: 2em;
-    padding-top: 2em;
-    text-align: center;
-}
-.container h1{ padding-top: 1em; }
-.container .sub-section{ padding: 2em; }
-.container .sub-section .fa{
-    font-size: 4em;
-    margin: 0.2em;
-}
-
-
 /* Projects Card styles */
-.sub-section .card{  border-radius: 10px; }
-.sub-section .card img{ border-radius: 10px 10px 0px 0px; }
+.card{  border-radius: 10px; }
+.card img{ border-radius: 10px 10px 0px 0px; }
+.card{ transition: 0.3s transform ease, 0.3s box-shadow ease; }
+.card:hover{
+    transform: scale(1.05);
+    box-shadow:  0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
 
 
 
@@ -98,7 +106,11 @@ body{
     display: inline-block;
     float: none;
 }
-/* Custom scroll bar */
+
+
+
+
+/* Custom scroll bar for videos section*/
 .video-group .row{ scrollbar-color: #007bff #F5F5F5; }
 .video-group .row::-webkit-scrollbar {
     height: 8px;
