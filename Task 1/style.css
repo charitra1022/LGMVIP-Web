@@ -169,6 +169,35 @@ footer{
 
 
 
+/* Newsletter styles */
+#newsletter-section{
+    padding-bottom: 2em;
+    background-image: url("images/newsletter/img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#newsletter-section .input-group{
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+/* 
+.section:nth-child(even){
+    background-color: blue;
+}
+.section:nth-child(odd){
+    background-color: green;
+}
+
+.section-title{
+    background-color: pink;
+} */
+
+
+
+
 
 /* Navigation Bar Link underline animation */
 #navbarNav .nav-item .nav-link {
