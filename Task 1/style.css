@@ -171,10 +171,13 @@ footer{
 
 /* Newsletter styles */
 #newsletter-section{
-    padding-bottom: 2em;
-    background-image: url("images/newsletter/img.jpg");
+    padding-bottom: 5em;
+    background-image: url("images/newsletter/img.png");
     background-size: cover;
     background-position: center;
+}
+#newsletter-section .section-title{
+    color: white;
 }
 #newsletter-section .input-group{
     text-align: center;
