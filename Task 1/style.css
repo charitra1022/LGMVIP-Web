@@ -89,7 +89,7 @@ body{
 .card{ 
     border-radius: 10px; 
     transition: 0.3s transform ease, 0.3s box-shadow ease; 
-    padding-top: 1em;
+    padding-top: 0em;
 }
 .card img{ border-radius: 10px 10px 0px 0px; }
 .card:hover{
@@ -132,8 +132,19 @@ body{
 
 
 /* Pricing section styles */
+#pricing-section .card h1{
+    padding-top: 0.2em;
+}
 .card-title .price-text{
     font-size: 2em;
+}
+
+
+
+/* Blog section styles */
+#blog-section .img-fluid{
+    padding-bottom: 1em;
+    border-radius: 4%;
 }
 
 
