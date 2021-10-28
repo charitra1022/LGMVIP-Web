@@ -29,7 +29,7 @@ body{
     letter-spacing: 0.05em;
     margin-left: 1%;
 }
-.navbar-space{ width: 30%; } /* introduces a space after brand name in large screens */
+.navbar-space{ width: 20%; } /* introduces a space after brand name in large screens */
 .nav-item{ margin-right: 2em; } /* Space after each nav link */
 
 
