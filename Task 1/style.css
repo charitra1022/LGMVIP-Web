@@ -69,7 +69,6 @@ body{
 
 
 
-
 /* Scroll to top button styles */
 #scrolltotop{
     font-size: 2em;
@@ -102,19 +101,18 @@ body{
 
 /* Videos Section styles */
 .video-group > .row {
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: scroll;
 }
-.video-group > .row > .col-sm-4 {
-    display: inline-block;
-    float: none;
-}
+
 
 
 
 
 /* Custom scroll bar for videos section*/
-.video-group .row{ scrollbar-color: #007bff #F5F5F5; }
+.video-group .row{ 
+    scrollbar-color: #007bff #F5F5F5; 
+    scroll-behavior: smooth;
+}
 .video-group .row::-webkit-scrollbar {
     height: 8px;
     background-color: #F5F5F5;
