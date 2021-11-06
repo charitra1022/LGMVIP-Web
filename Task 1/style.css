@@ -70,10 +70,16 @@ body {
 }
 .container .sub-section {
   padding: 2em;
+  display: flex;
+  flex-direction: column
 }
 .container .sub-section .fa {
   font-size: 4em;
   margin: 0.2em;
+}
+.container .sub-section .btn{
+  margin-top: auto;
+  align-self: center;
 }
 
 /* Scroll to top button styles */
