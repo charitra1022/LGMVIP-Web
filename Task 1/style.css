@@ -71,13 +71,13 @@ body {
 .container .sub-section {
   padding: 2em;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 .container .sub-section .fa {
   font-size: 4em;
   margin: 0.2em;
 }
-.container .sub-section .btn{
+.container .sub-section .btn {
   margin-top: auto;
   align-self: center;
 }
@@ -109,14 +109,13 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
 }
-.card-body .btn{
+.card-body .btn {
   margin-top: auto;
 }
-
 
 /* Videos Section styles */
 .video-group > .row {
