@@ -118,28 +118,33 @@ body {
 }
 
 /* Videos Section styles */
-.video-group > .row {
+.video-group .video-container{
   overflow-x: scroll;
+  white-space: nowrap;
+}
+.video-group .video-container div{
+  display: inline;
 }
 
+
 /* Custom scroll bar for videos section*/
-.video-group .row {
+.video-group .video-container {
   scrollbar-color: #007bff #f5f5f5;
   scroll-behavior: smooth;
 }
-.video-group .row::-webkit-scrollbar {
+.video-group .video-container::-webkit-scrollbar {
   height: 8px;
   background-color: #f5f5f5;
 }
-.video-group .row::-webkit-scrollbar-track {
+.video-group .video-container::-webkit-scrollbar-track {
   background-color: #f5f5f5;
   border-radius: 10px;
 }
-.video-group .row::-webkit-scrollbar-thumb {
+.video-group .video-container::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #007bff;
 }
-.video-group .row::-webkit-scrollbar-thumb:hover {
+.video-group .video-container::-webkit-scrollbar-thumb:hover {
   background: #007bff;
 }
 
