@@ -125,6 +125,9 @@ body {
 .video-group .video-container div{
   display: inline;
 }
+iframe{
+  border: 0;
+}
 
 
 /* Custom scroll bar for videos section*/
