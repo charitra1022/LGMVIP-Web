@@ -186,7 +186,7 @@ footer {
 /* Newsletter styles */
 #newsletter-section {
   padding-bottom: 5em;
-  background-image: url("images/newsletter/newsletter-bg.png");
+  background-image: url("assets/images/newsletter/newsletter-bg.png");
   background-size: cover;
   background-position: center;
 }
