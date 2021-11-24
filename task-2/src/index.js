@@ -5,9 +5,8 @@ import { Helmet } from "react-helmet";
 import LoaderComponent from "./loader";
 import GridItem from "./grid-item";
 import CustomButton from "./custom-button";
-
+import ScrollToTop from "./scrollToTop";
 import { Button, Navbar, Container, Row } from "react-bootstrap";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -27,6 +26,13 @@ class App extends Component {
 
     this.pageNavButtonClick = this.pageNavButtonClick.bind(this); // binder for page navigation buttons
   }
+
+  scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   async fetchData() {
     /* This method fetches data from the API */
@@ -64,6 +70,9 @@ class App extends Component {
 
   pageNavButtonClick(name) {
     /* This function is called when page navigation buttons are clicked */
+
+    this.scrollToTop();
+
     if (name === "1") {
       this.setState({
         pageIndex: 0,
@@ -115,7 +124,6 @@ class App extends Component {
         gridRow1 = grids.slice(0, 3);
         gridRow2 = grids.slice(3, 6);
 
-
         pages = parseInt(page1.total_pages);
         page_nav_buttons = Array(pages);
         for (let i = 0; i < pages; i++) {
@@ -158,6 +166,8 @@ class App extends Component {
           </div>
           {isLoaded && page_nav_buttons}
         </div>
+
+        <ScrollToTop />
       </div>
     );
   }

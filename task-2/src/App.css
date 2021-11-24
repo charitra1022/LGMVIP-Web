@@ -9,9 +9,6 @@ body {
   transition: opacity 0.5s;
   opacity: 0;
 }
-.show {
-  opacity: 1;
-}
 
 .loader {
   position: absolute;
@@ -57,11 +54,17 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-/* .person-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 1% 20%;
-  padding: 2.5% 0;
-} */
+.scroll-to-top{
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  width: 2.5em;
+  height: auto;
+  transition: opacity 0.5s;
+  opacity: 0;
+  color: #193498;
+}
+
+.show {
+  opacity: 1;
+}
