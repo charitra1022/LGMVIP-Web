@@ -101,7 +101,7 @@ class App extends Component {
       console.log("Fetching data, wait..");
     } else {
       if (isLoaded) {
-        if (pageIndex == 0) {
+        if (pageIndex === 0) {
           console.log("Page is 1");
           currentPage = page1.data;
         } else {
