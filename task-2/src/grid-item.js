@@ -17,7 +17,7 @@ class GridItem extends Component {
     const email = "mailto:" + data.email;
 
     return (
-      <Col xs={6} md={4}>
+      <Col xs={12} md={4}>
         <Card className="person-data">
           <Card.Img variant="top" src={data.avatar} />
           <Card.Body>

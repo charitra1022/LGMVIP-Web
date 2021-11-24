@@ -42,9 +42,7 @@ body {
 }
 
 .person-data {
-  /* display: inline-block; */
-  margin: 1%;
-  /* flex: 1 1 30%; */
+  margin: 10% 10%;
   border-radius: 10px;
   transition: 0.3s transform ease, 0.3s box-shadow ease;
   background-color: #96dadb;
