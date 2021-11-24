@@ -68,13 +68,13 @@ class App extends Component {
       this.setState({
         pageIndex: 0,
       });
-      // this.fetchData();
+      this.fetchData();
     }
     if (name === "2") {
       this.setState({
         pageIndex: 1,
       });
-      // this.fetchData();
+      this.fetchData();
     }
   }
 
