@@ -165,6 +165,17 @@ class App extends Component {
             </Container>
           </div>
           {isLoaded && page_nav_buttons}
+          {isLoaded && (
+            <footer>
+              <div class="attribution">
+                Made with ❤ by
+                <a href="https://github.com/charitra1022/" target="_blank">
+                  {" "}
+                  Charitra Agarwal
+                </a>
+              </div>
+            </footer>
+          )}
         </div>
 
         <ScrollToTop />

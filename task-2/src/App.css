@@ -68,3 +68,10 @@ body {
 .show {
   opacity: 1;
 }
+
+.attribution {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  vertical-align: bottom;
+}
