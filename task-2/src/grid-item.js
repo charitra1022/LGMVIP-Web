@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {Card} from 'react-bootstrap';
+import { Card, Col } from "react-bootstrap";
 
 class GridItem extends Component {
   constructor(props) {
@@ -17,13 +17,15 @@ class GridItem extends Component {
     const email = "mailto:" + data.email;
 
     return (
-      <Card className='person-data'>
-        <Card.Img variant='top' src={data.avatar} />
-        <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Link href={email}>{data.email}</Card.Link>
-        </Card.Body>
-      </Card>
+      <Col xs={6} md={4}>
+        <Card className="person-data">
+          <Card.Img variant="top" src={data.avatar} />
+          <Card.Body>
+            <Card.Title>{name}</Card.Title>
+            <Card.Link href={email}>{data.email}</Card.Link>
+          </Card.Body>
+        </Card>
+      </Col>
     );
   }
 }

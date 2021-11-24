@@ -42,15 +42,15 @@ body {
 }
 
 .person-data {
-  display: inline-block;
-  /* padding: 0.5% 5%; */
+  /* display: inline-block; */
   margin: 1%;
-  flex: 1 1 30%;
+  /* flex: 1 1 30%; */
   border-radius: 10px;
   transition: 0.3s transform ease, 0.3s box-shadow ease;
   background-color: #96dadb;
   border: none;
 }
+
 .person-data:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
@@ -59,11 +59,11 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-.person-container {
+/* .person-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 1% 20%;
   padding: 2.5% 0;
-}
+} */

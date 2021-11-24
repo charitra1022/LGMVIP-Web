@@ -6,7 +6,7 @@ import LoaderComponent from "./loader";
 import GridItem from "./grid-item";
 import CustomButton from "./custom-button";
 
-import { Button, Navbar, Container } from "react-bootstrap";
+import { Button, Navbar, Container, Row } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -95,7 +95,7 @@ class App extends Component {
     // set page loaded state true when both the pages are loaded
     const isLoaded = isPage1DataLoaded && isPage2DataLoaded;
 
-    let grids, pages, page_nav_buttons, currentPage;
+    let grids, pages, page_nav_buttons, currentPage, gridRow1, gridRow2;
 
     if (isLoading) {
       console.log("Fetching data, wait..");
@@ -112,6 +112,9 @@ class App extends Component {
         console.log(currentPage);
 
         grids = currentPage.map((item) => <GridItem person={item} />); // get the data display cards
+        gridRow1 = grids.slice(0, 3);
+        gridRow2 = grids.slice(3, 6);
+
 
         pages = parseInt(page1.total_pages);
         page_nav_buttons = Array(pages);
@@ -147,7 +150,12 @@ class App extends Component {
         {isLoading && <LoaderComponent />}
 
         <div className={classes}>
-          <div className="person-container">{grids}</div>
+          <div className="person-container">
+            <Container>
+              <Row>{gridRow1}</Row>
+              <Row>{gridRow2}</Row>
+            </Container>
+          </div>
           {isLoaded && page_nav_buttons}
         </div>
       </div>
